@@ -11,7 +11,9 @@
 
 - Azure Portal: Web-based interface for cloud resource management
     
-- RDP: A protocol used for remotely accessing and controlling virtual machines
+- RDP: A protocol used for remotely accessing and controlling virtual machines through a GUI
+
+- SSH: A protocol used for remotely accessing and controlling virtual machines securely through a CLI
   
 <h2>Key Concepts</h2>
 
@@ -77,7 +79,7 @@
 - Fill out these details:<br> 
 -Virtual Machine Name<br>
 -Region [!!IMPORTANT!! Make sure that the region used to create the resource group is the same as the region as the VM you are creating, might run into issues otherwise] <br>
--Image [we are going to make a Windows 10 vm so make sure to select the Windows 10 pro option for image]<br>
+-Image [we are going to make a Windows 10 VM so make sure to select the Windows 10 pro option for image]<br>
 
 ![image](https://github.com/user-attachments/assets/6d08279c-cba8-4fa2-94d2-1f180a82f7e9)
 
@@ -100,14 +102,14 @@ Confirm Licensing
 ![image](https://github.com/user-attachments/assets/dd270697-8d60-4b08-944e-e45ddae3e3ca)
 
 - Virtual Machine (Windows 10 Pro) Successfully Created.<br>
-Osbervations: When creating our VMs, a Virtual Network,Virtual NIC, IP Address abd Network Security Group will be automatically created.<br>[Essentially all the necessary network infrastructure so that the Vm can have its own network to transfer data locally and to the internet]  
+Osbervations: When creating our VMs, a Virtual Network,Virtual NIC, IP Address abd Network Security Group will be automatically created.<br>[Essentially all the necessary network infrastructure so that the VM can have its own network to transfer data locally and to the internet]  
 
  ![image](https://github.com/user-attachments/assets/8b856f5e-c4e7-4184-9aa2-6d57d43d3930)
 
 <h2>Step 3: Creating our Second Resource (Virtual Machine)</h2>
 
 - Repeat same Steps as before to create our second VM(Linux Ubuntu server):<br>
-Place vm in the same resource group as the other VM we made<br>Name VM<br>Use the same Region as the resource group<br>Choose 2cpus for the size for optimal performance<br>Select Authentication Type Password<br>Create a Username and password<br>Review and Create
+-Place vm in the same resource group as the other VM we made<br>-Name VM<br>-Use the same Region as the resource group<br>-Choose 2cpus for the size for optimal performance<br>-Select Authentication Type: Password<br>-Create a Username and password<br>-Review and Create
 
 ![image](https://github.com/user-attachments/assets/acb2ad8a-26eb-45d1-82ca-1e9596130a93)
 
@@ -134,7 +136,7 @@ Place vm in the same resource group as the other VM we made<br>Name VM<br>Use th
 
 ![image](https://github.com/user-attachments/assets/1a8e4a73-f175-42fb-bb68-6ba3ab1b18ba)
 
-- If on Windows press Windows key -> Open RDP If on MAC download RDP program in APP store and put in the IP adress of one of the VM 
+- If on Windows press Windows key -> Open RDP If on MAC download RDP program in APP store and put in the IP adress of the Windows VM 
 
 ![image](https://github.com/user-attachments/assets/5f159faa-a725-4e26-b101-de3f7121278e)
 
@@ -146,7 +148,7 @@ Place vm in the same resource group as the other VM we made<br>Name VM<br>Use th
 
 ![image](https://github.com/user-attachments/assets/7844c01c-08fb-4506-903b-c14106e968f8)
  
--Type in these commands ssh (insert the username of the vm linux machine here)@(insert the IP address of the machine here) press enter
+-Type in these commands: ssh "insert the username of the vm linux machine here"@"insert the IP address of the machine here" press enter
 
 ![image](https://github.com/user-attachments/assets/5c1cfc4b-6d81-4c77-92c9-5ffa1314af63)
 
@@ -160,9 +162,16 @@ To exit out of the Linux VM use the command " exit "
 ![image](https://github.com/user-attachments/assets/a0052824-fa7b-4cad-84bd-6d31ed8ec863)
 
 
-🎉Congrats we have successfully remotely logged into the VM's and confirmed that they are running🎉
+# 🎉Congratulations🎉
+<h2>We have successfully:</h2>
 
-# That Concludes this lab 🫡
+- Created a resource Group to manage and organize all resources and services we will use on the Microsoft cloud platform Azure
+
+- Deployed resources in the form of Windows (Windows 10 Pro) and Linux (Ubunut Server) Virtual Machines along with a Virtual Network 
+
+- Remotely accessed the VM's using RDP and SSH to confirme that both VM's were running properly configured. 
+
+# That Concludes this lab  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
 
 
 
