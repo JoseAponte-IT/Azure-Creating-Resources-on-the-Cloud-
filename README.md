@@ -126,7 +126,7 @@ Osbervations: When creating our VMs, a Virtual Network,Virtual NIC, IP Address a
 
 ![image](https://github.com/user-attachments/assets/21b32eb1-23cf-4f69-a5c3-fa7e389d022c)
 
-<h2>Step 4: Use RDP to check if VM's are running (optional) </h2>
+<h2>Step 4: Use RDP or SSH to check if VM's are running (optional) </h2>
 
 - Return to the Virtual Machine Dashboard in the Azure portal
 
