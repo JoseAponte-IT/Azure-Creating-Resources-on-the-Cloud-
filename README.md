@@ -142,7 +142,8 @@ Osbervations: When creating our VMs, a Virtual Network,Virtual NIC, IP Address a
 
 - Enter the Log in credentials and log in to the machine 
 
-![image](https://github.com/user-attachments/assets/bdd8e711-4ed7-4a70-b81a-9a21dd664c23)
+![image](https://github.com/user-attachments/assets/ea9d83e9-20e4-4f72-860a-85defe141e06)
+
 
 - To connect to the Linux VM Remotely open up Powershell or whatever Commandline Interface your OS is using 
 
